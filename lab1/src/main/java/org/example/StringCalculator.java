@@ -50,7 +50,9 @@ public class StringCalculator {
         }
 
         for (String number : numbers_mas) {
-            suma += Integer.parseInt(number);
+            if(Integer.parseInt(number)<=1000) {
+                suma += Integer.parseInt(number);
+            }
         }
         return suma;
     }

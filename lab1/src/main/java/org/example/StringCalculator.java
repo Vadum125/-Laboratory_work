@@ -14,9 +14,16 @@ public class StringCalculator {
 
     public int add(String numbers){
 
-        if(numbers.isEmpty()) {
+        if(numbers.isEmpty() || (numbers.length() == 4 && numbers.charAt(0) == '/' && numbers.charAt(1) == '/' && numbers.charAt(3) == '\n')) {
             return 0;
         }
+
+        if (numbers.length()>4  && numbers.charAt(0) == '/' && numbers.charAt(1) == '/' && numbers.charAt(3) == '\n'){
+            String delimiter = String.valueOf(numbers.charAt(2));
+            numbers=numbers.replace("//"+delimiter+"\n", "");
+            numbers=numbers.replace(delimiter, ",");
+        }
+
         numbers = numbers.replace("\n", ",");
         int suma=0;
         String[] numbers_mas=numbers.split(",");

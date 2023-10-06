@@ -17,7 +17,9 @@ public class StringCalculatorTest {
         assertEquals(6, calculator.add("1,3\n2"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add("1\n\n3"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add("\n1,3"));
-
+        assertEquals(10, calculator.add("//;\n1;2;3;4"));
+        assertEquals(10, calculator.add("//\n\n1,2\n3\n4"));
+        assertEquals(10, calculator.add("//;\n1;2\n3,4"));
     }
 }
 

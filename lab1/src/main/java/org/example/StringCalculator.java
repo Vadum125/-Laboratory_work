@@ -1,9 +1,11 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class StringCalculator {
     public static void main(String[] args){
         StringCalculator calculator = new StringCalculator();
-        String string="1,h,5,5";
+        String string="-1";
         try {
             int result = calculator.add(string);
             System.out.println("Результат: " + result);
@@ -27,12 +29,28 @@ public class StringCalculator {
         numbers = numbers.replace("\n", ",");
         int suma=0;
         String[] numbers_mas=numbers.split(",");
+
         for (String number : numbers_mas) {
             try {
-                suma += Integer.parseInt(number);
+                Integer.parseInt(number);
             } catch (NumberFormatException e) {
                 throw new IllegalArgumentException(e.getMessage());
             }
+        }
+
+        ArrayList<Integer> negative_sp = new ArrayList<>();
+        for(String number : numbers_mas){
+            if(Integer.parseInt(number)<0){
+                negative_sp.add(Integer.parseInt(number));
+            }
+        }
+        if(!negative_sp.isEmpty()){
+            String message = "Недозволені від’ємні числа: " + negative_sp;
+            throw new IllegalArgumentException(message);
+        }
+
+        for (String number : numbers_mas) {
+            suma += Integer.parseInt(number);
         }
         return suma;
     }

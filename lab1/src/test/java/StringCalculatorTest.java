@@ -20,6 +20,10 @@ public class StringCalculatorTest {
         assertEquals(10, calculator.add("//;\n1;2;3;4"));
         assertEquals(10, calculator.add("//\n\n1,2\n3\n4"));
         assertEquals(10, calculator.add("//;\n1;2\n3,4"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("-1"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("1,-2,3"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("//;\n-1;2;-3;4"));
+
     }
 }
 

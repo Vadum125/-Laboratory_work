@@ -25,6 +25,9 @@ public class StringCalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calculator.add("//;\n-1;2;-3;4"));
         assertEquals(1001, calculator.add("//*\n1000*1004*1234*1"));
         assertEquals(0, calculator.add("10004,1005,1234"));
+        assertEquals(6, calculator.add("//[***]\n1***2***3"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("//[***\n1***2***3"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("//[***]1***2***3"));
     }
 }
 

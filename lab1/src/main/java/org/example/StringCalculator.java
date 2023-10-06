@@ -26,6 +26,22 @@ public class StringCalculator {
             numbers=numbers.replace(delimiter, ",");
         }
 
+        if (numbers.length()>5  && numbers.charAt(0) == '/' && numbers.charAt(1) == '/' && numbers.charAt(2) == '[' && numbers.charAt(3) != ']'){
+            StringBuilder delimiterBuilder = new StringBuilder();
+            int index = numbers.indexOf(']');
+            if(index==-1 || numbers.charAt(index+1)!='\n'){
+                throw new IllegalArgumentException("Помилка");
+            }
+            int i = 3;
+            while (i < index) {
+                delimiterBuilder.append(numbers.charAt(i));
+                i++;
+            }
+            String delimiter = delimiterBuilder.toString();
+            numbers=numbers.replace("//["+delimiter+"]\n", "");
+            numbers=numbers.replace(delimiter, ",");
+        }
+
         numbers = numbers.replace("\n", ",");
         int suma=0;
         String[] numbers_mas=numbers.split(",");

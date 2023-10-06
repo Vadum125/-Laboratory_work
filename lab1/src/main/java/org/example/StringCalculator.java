@@ -17,7 +17,7 @@ public class StringCalculator {
         if(numbers.isEmpty()) {
             return 0;
         }
-
+        numbers = numbers.replace("\n", ",");
         int suma=0;
         String[] numbers_mas=numbers.split(",");
         for (String number : numbers_mas) {

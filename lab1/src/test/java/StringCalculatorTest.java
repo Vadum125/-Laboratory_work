@@ -13,6 +13,10 @@ public class StringCalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calculator.add("1,g,3"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add("1,,3"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add(",1,3"));
+        assertEquals(4, calculator.add("1\n3"));
+        assertEquals(6, calculator.add("1,3\n2"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("1\n\n3"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("\n1,3"));
 
     }
 }

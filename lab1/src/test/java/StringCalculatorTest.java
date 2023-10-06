@@ -28,6 +28,11 @@ public class StringCalculatorTest {
         assertEquals(6, calculator.add("//[***]\n1***2***3"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add("//[***\n1***2***3"));
         assertThrows(IllegalArgumentException.class, () -> calculator.add("//[***]1***2***3"));
+        assertEquals(10, calculator.add("//[*][-][+]\n1*2-3+4"));
+        assertEquals(10, calculator.add("//[*][-][+]\n1*2*3*4"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("//[*][-][+]1*2-3+4"));
+        assertThrows(IllegalArgumentException.class, () -> calculator.add("//[*][-]+]\n1*2-3+4"));
+
     }
 }
 

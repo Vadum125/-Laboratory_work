@@ -3,7 +3,7 @@ package org.example;
 public class StringCalculator {
     public static void main(String[] args){
         StringCalculator calculator = new StringCalculator();
-        String string="1,4";
+        String string="1,h,5,5";
         try {
             int result = calculator.add(string);
             System.out.println("Результат: " + result);
@@ -20,10 +20,6 @@ public class StringCalculator {
 
         int suma=0;
         String[] numbers_mas=numbers.split(",");
-        if(numbers_mas.length>2){
-            throw new IllegalArgumentException("введено більше двох чисел");
-        }
-
         for (String number : numbers_mas) {
             try {
                 suma += Integer.parseInt(number);

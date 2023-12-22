@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.di.TestClass" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-12-22T20:00:10" hostname="DESKTOP-K2H933U" time="0.027">
+  <properties/>
+  <testcase name="RegisterInterfaceTest" classname="test.di.TestClass" time="0.004"/>
+  <testcase name="CircularInjectTest" classname="test.di.TestClass" time="0.008"/>
+  <testcase name="RRegisterAbstractTest" classname="test.di.TestClass" time="0.001"/>
+  <testcase name="NotDependenciesTest" classname="test.di.TestClass" time="0.002"/>
+  <testcase name="SingletonTest" classname="test.di.TestClass" time="0.004"/>
+  <testcase name="InjectDependencyTest" classname="test.di.TestClass" time="0.001"/>
+  <testcase name="RebindInstanceTest" classname="test.di.TestClass" time="0.001"/>
+  <testcase name="TwoConstructorInjectionTest" classname="test.di.TestClass" time="0.001"/>
+  <testcase name="RebindClassTest" classname="test.di.TestClass" time="0.0"/>
+  <testcase name="RegisterNullTest" classname="test.di.TestClass" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

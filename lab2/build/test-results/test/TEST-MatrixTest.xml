@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MatrixTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2023-11-17T08:33:11" hostname="DESKTOP-K2H933U" time="0.241">
+  <properties/>
+  <testcase name="testNotEqual()" classname="MatrixTest" time="0.035"/>
+  <testcase name="testColumnsMatrix()" classname="MatrixTest" time="0.006"/>
+  <testcase name="testInverseInvalid1()" classname="MatrixTest" time="0.006"/>
+  <testcase name="testInverseInvalid2()" classname="MatrixTest" time="0.005"/>
+  <testcase name="testGetElementInvalid()" classname="MatrixTest" time="0.007"/>
+  <testcase name="testGetRowInvalid()" classname="MatrixTest" time="0.005"/>
+  <testcase name="testCopyConstructor()" classname="MatrixTest" time="0.004"/>
+  <testcase name="testMultiplyMatrixByScalar()" classname="MatrixTest" time="0.006"/>
+  <testcase name="testFillMatrix()" classname="MatrixTest" time="0.004"/>
+  <testcase name="testGetElement()" classname="MatrixTest" time="0.007"/>
+  <testcase name="testMultiplyMatrices()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testGetMatrixSize()" classname="MatrixTest" time="0.005"/>
+  <testcase name="testaddMatricesInvalid()" classname="MatrixTest" time="0.002"/>
+  <testcase name="testMultiplyMatricesInvalid()" classname="MatrixTest" time="0.005"/>
+  <testcase name="teesMatrixConstructor()" classname="MatrixTest" time="0.005"/>
+  <testcase name="testGetColumnInvalidIndex()" classname="MatrixTest" time="0.011"/>
+  <testcase name="testGetColumn()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testaddMatrices()" classname="MatrixTest" time="0.005"/>
+  <testcase name="testVectorMatrix()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testGetRow()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testEqualsAndHashCode()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testTransponseMatrix()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testInverse()" classname="MatrixTest" time="0.001"/>
+  <testcase name="testOneMatrix()" classname="MatrixTest" time="0.003"/>
+  <testcase name="testRowsMatrix()" classname="MatrixTest" time="0.002"/>
+  <testcase name="teesEmptyConstructor()" classname="MatrixTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
